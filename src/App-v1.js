@@ -114,9 +114,11 @@ class Weather extends React.Component {
       weathercode: codes,
     } = this.props.weather;
 
+    console.log(this.props.location);
+
     return (
       <div>
-        <h2>Weather in {this.props.location}</h2>
+        <h2>Weather {this.props.location}</h2>
         <ul className="weather">
           {dates.map((date, i) => (
             <Day
